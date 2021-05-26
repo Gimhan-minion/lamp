@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lamp</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #ff7074;
+        }
+
+        .container {
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        button {
+            padding: 10px;
+            width: 200px;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="./lamp.jpg" alt=""
+         width="400px" height="500px">
+
+    <div class="buttons">
+        <button id="turn-on">Turn on lamp</button>
+        <button id="turn-off">Turn off lamp</button>
+    </div>
+</div>
+
+<script>
+
+    const imgElement = document.querySelector('img');
+    const turnOnElement = document.querySelector('#turn-on');
+    const turnOffElement = document.querySelector('#turn-off');
+
+    const animatedUrl = 'https://img.republicworld.com/republic-prod/stories/images/16051865145fad33d2160a4.gif';
+    const stillUrl = './lamp.jpg';
+
+    turnOnElement.addEventListener('click' , function () {
+        imgElement.setAttribute('src' , animatedUrl)
+    });
+
+    turnOffElement.addEventListener('click' , function () {
+        imgElement.setAttribute('src' , stillUrl)
+    });
+
+</script>
+</body>
+</html>

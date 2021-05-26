@@ -1,0 +1,14 @@
+{
+  "name": "lamp",
+  "version": "3.0.0",
+  "description": "Lamp Project",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.12.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server . --port 9000"
+  }
+}
